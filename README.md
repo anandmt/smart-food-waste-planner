@@ -33,11 +33,8 @@ The project would address three related questions:
 
 
 - Which items should be used first?
-- 
 - What meals can be made from the available ingredients?
-- 
 - How much should the household buy next time?
-- 
 
 
 ## How is it used?
@@ -57,15 +54,10 @@ Example interaction:
 
 
 1. The user adds milk, spinach, tomatoes, rice, and eggs.
-2. 
 2. The model estimates that the spinach and milk need attention first.
-3. 
 3. The recommender ranks suitable meals using those items.
-4. 
 4. The user marks ingredients as eaten, discarded, frozen, or still available.
-5. 
 5. This feedback improves future quantity and timing estimates.
-6. 
 
 
 ## Data sources and AI methods
@@ -81,13 +73,9 @@ Possible AI techniques include:
 
 
 - **Classification** to estimate whether an item is at low, medium, or high risk of spoilage within a chosen period.
-- 
 - **Regression** to predict likely consumption quantities and reduce over-purchasing.
-- 
 - **Recommendation and ranking** to select recipes that use urgent ingredients while respecting preferences and constraints.
-- 
 - **Natural-language processing** to normalize receipt descriptions and user-entered ingredient names.
-- 
 
 
 A first prototype should use transparent baseline methods, such as logistic regression and simple ranking rules. These can be compared with more complex models only after sufficient representative data is available. Performance should be measured using precision and recall for spoilage alerts, prediction error for quantities, the proportion of recommendations accepted, and—most importantly—the measured reduction in discarded food.
@@ -107,17 +95,11 @@ Other important limitations and ethical concerns include:
 
 
 - **Allergies and dietary safety:** explicit restrictions must override every recommendation.
-- 
 - **Privacy:** household purchasing and consumption patterns are sensitive. Data should be minimized, encrypted, exportable, and deletable.
-- 
 - **Bias and cultural coverage:** recipe and shelf-life data may poorly represent some cuisines, climates, and household practices.
-- 
 - **Accessibility:** manual entry creates work, so the interface must remain optional, simple, and correctable.
-- 
 - **Uncertainty:** predictions should show confidence and explain the main reasons behind a recommendation.
-- 
 - **Unequal access:** features should not require expensive smart appliances or constant connectivity.
-- 
 
 
 The tool does not solve wider supply-chain waste, food affordability, or inadequate access to fresh food. Those require policy and community action beyond a household application.
